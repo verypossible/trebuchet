@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "trebuchet"
+version = "0.1.0"
+description = ""
+authors = ["DanielMartinAlarcon <daniel.ma@verypossible.com>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com/verypossible/trebuchet"
+homepage = "https://github.com/verypossible/trebuchet"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+jupyter = "^1.0"
+notebook = "^6.0"
+boto3 = "^1.10"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7"
+black = {version = "^18.3-alpha.0", allows-prereleases = true}
+pytest = "^5.3"
+pytest-mock = "^1.12"
+pytest-watch = "^4.2"
+coveralls = "^1.8"
+setuptools = "^42.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
